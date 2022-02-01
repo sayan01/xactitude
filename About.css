@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "LEMONMILK-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("Fonts/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+  font-family: "LEMONMILK-Bold";
+  font-style: normal;
+  font-weight: 500;
+  src: url("Fonts/LEMONMILK-Bold.otf");
+}
+
+@font-face {
+  font-family: "LEMONMILK-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Fonts/LEMONMILK-Regular.otf");
+}
+
+@font-face {
+  font-family: "LEMONMILK-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Fonts/LEMONMILK-Light.otf");
+}
+:root {
+  --blaze-orange: rgba(255, 102, 0, 1);
+  --jacaranda: rgba(33, 0, 38, 1);
+  --soft-peach: rgba(242, 234, 239, 1);
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  text-align: center;
+}
+a, a:hover, a:active, a:focus, a:visited{
+    text-decoration: none;
+}
+.title {
+    background-color:black;
+    padding-bottom: 100px;
+}
+.banner {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.banner-right {
+  display: flex;
+}
+.college-logo img{
+  height: 80px;
+}
+.register, .home {
+
+  color:var(--soft-peach);
+
+
+  font-family: "LEMONMILK-Regular";
+  font-size: 18px;
+  margin: 20px;
+}
+
+.register:hover, .home:hover {
+  color:blueviolet;
+  font-weight: 900;
+}
+
+.xactitude21 {
+  width: 35%;
+  margin-top: 3%;
+}
+.heading {
+  font-family: "LEMONMILK-Regular";
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.fest, .dept, .college {
+  padding: 100px 20%;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: justify;
+}
+.dept {
+  background-color: var(--soft-peach);
+}
+.col-image{
+  z-index: 1;
+  height:120%;
+  opacity: 0.3;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.contact-banner {
+  background-color: var(--jacaranda);
+  font-family: "LEMONMILK-Light";
+  color: white;
+  padding:25px;
+  position: relative;
+  z-index: 3;
+  opacity: 1;
+  overflow: hidden;
+}
+
+
+.heading {
+  z-index: 3;
+  font-size:35px;
+  font-family: "LEMONMILK-Bold";
+  margin-bottom: 30px;
+  position: relative;
+  
+}
+.details {
+  z-index: 3;
+  font-size: 14px;
+  text-align: left;
+  position: relative;
+  margin-bottom: 10px;
+}
+.details big {
+  z-index: 3;
+  font-family: "LEMONMILK-Regular";
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--soft-peach);
+  position: relative;
+}
+.details a {
+  color: inherit;
+}
+.links {
+  z-index: 3;
+  width: 100px;
+  position: relative;
+  text-align: right;
+  display: grid;
+  width: 100%;
+  justify-items: end;
+}
+.link-icon{
+  text-align: right;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 700px){
+  .banner {
+    display: block;
+  }
+  .college-logo img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+  }
+  .banner-right {
+    justify-content: center;
+    margin: 30px 10%;
+  }
+  .xactitude21 {
+    width:75%;
+  }
+  .fest, .dept, .college, .contact {
+    padding: 100px 50px;
+  }
+  .contact{
+    padding:0 3%;
+  }
+  .details big{
+    font-size: 18px;
+  }
+  .details{
+    font-size: 14px;
+  }
+  .links{
+    padding-top: 8%;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 400px){
+  .link-icon{
+    width:80%;
+  }
+  .mail{
+    width:90%;
+  }
+  .xactitude21{
+    width: 65%;
+  }
+}

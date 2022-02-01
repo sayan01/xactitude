@@ -1,0 +1,442 @@
+@font-face {
+    font-family: "LEMONMILK-Medium";
+    font-style: normal;
+    src: url("Fonts/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+    font-family: "LEMONMILK-Regular";
+    font-style: normal;
+    src: url("Fonts/LEMONMILK-Regular.otf");
+}
+
+@font-face {
+    font-family: "LEMONMILK-Light";
+    font-style: normal;
+    src: url("Fonts/LEMONMILK-Light.otf");
+}
+@font-face {
+    font-family: "LEMONMILK-Bold";
+    font-style: normal;
+    src: url("Fonts/LEMONMILK-Bold.otf");
+}
+
+:root {
+    --blaze-orange: rgba(255, 102, 0, 1);
+    --cinnabar: rgba(239, 54, 54, 1);
+    --dove-gray: rgba(112, 112, 112, 1);
+    --jacaranda: rgba(33, 0, 38, 1);
+    --soft-peach: rgba(242, 234, 239, 1);
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+a, a:hover, a:active, a:focus, a:visited {
+    text-decoration: none;
+}
+
+
+body{
+    font-family: "LEMONMILK-Regular";
+    font-size: 16px;
+    width:calc(100%-2em);
+    overflow-x: hidden;
+}
+
+
+.banner{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.xactitude21{
+   width: 15%;
+}
+.banner-right {
+  display: flex;
+}
+
+.transaction{
+    margin: 10px;
+    margin-top: 2em;
+}
+
+.events{
+    font-family:"LEMONMILK-Bold";
+    padding:2em;
+    text-align: center;
+}
+
+.home, .contct {
+  color:var(--soft-peach);
+  font-family: "LEMONMILK-Regular";
+  font-size: 18px;
+  margin:15px;
+}
+.home:hover, .contct:hover {
+  color:blueviolet;
+  font-weight: 900;
+}
+.events {
+  z-index: 2;
+    padding: 1em;
+    position: relative;
+}
+.events-title {
+  z-index: 2;
+    font-family: "LEMONMILK-Medium";
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.brochure {
+    color: white;
+    width: 7em;
+    margin: 0 auto 10px auto;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: "LEMONMILK-Medium";
+    background-color: var(--jacaranda);
+    border-radius: 20px;
+}
+.brochure:hover {
+    background-color: var(--soft-peach);
+    color: black;
+}
+.brochure:active {
+  background-color: var(--cinnabar);
+  color: white;
+}
+.event-btn {
+   -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+
+    font-family: "LEMONMILK-Medium";
+    font-size: 26px;
+    font-weight: 200;
+    padding: 1em 10px;
+    margin:10px 5%;
+    background: white;
+    opacity: 0.8;
+    box-shadow:lightgray 4px 4px 8px;
+    box-shadow:grey 4px 4px 8px;
+    border-radius: 20px;
+    width:30%;
+    height:30%;
+}
+.event-btn-sub{
+font-size: 18px;
+}
+
+.event-btn:focus{
+  color:var(--cinnabar);
+  outline: none;
+}
+
+.transaction, .general {
+  padding: 30px 20%;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+}
+.general{
+  font-size: 25px;
+  text-align: left;
+}
+.listitems div{
+  text-align: left;
+  margin: 0 20%;
+}
+
+.event-rules {
+    text-align: center;
+    padding: 5% 0;
+    margin: 5% 0;
+    position: relative;
+}
+.img1{
+  width:100%;
+  position: absolute;
+  z-index: 1;
+  left:0;
+}
+.heading {
+    font-family: "LEMONMILK-Regular";
+    font-size: 40px;
+}
+.register {
+    color: black;
+    font-family: "LEMONMILK-Medium";
+    font-size: 24px;
+    width: 30%;
+    margin:8% 0;
+    padding: 2% 3%;
+    background: none;
+    border: 2px solid dimgray;
+    border-radius: 48px;
+    outline: none;
+    text-align: center;
+}
+.register:hover {
+    background-color:var(--soft-peach);
+}
+.col-image{
+  z-index: 1;
+  height:120%;
+  opacity: 0.3;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.contact-banner {
+  background-color: var(--jacaranda);
+  font-family: "LEMONMILK-Light";
+  color: white;
+  padding:25px;
+  position: relative;
+  z-index: 3;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.heading {
+  z-index: 3;
+  font-size:35px;
+  font-family: "LEMONMILK-Bold";
+  margin-bottom: 30px;
+  position: relative;
+  
+}
+.details {
+  z-index: 3;
+  font-size: 14px;
+  text-align: left;
+  position: relative;
+  margin-bottom: 10px;
+}
+.details big {
+  z-index: 3;
+  font-family: "LEMONMILK-Regular";
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--soft-peach);
+  position: relative;
+}
+.details a {
+  color: inherit;
+}
+.links {
+  z-index: 3;
+  width: 100px;
+  position: relative;
+  text-align: right;
+  display: grid;
+  width: 100%;
+  justify-items: end;
+}
+.link-icon{
+  text-align: right;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.event-container{
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 5%;
+  }
+
+    /* Hide the images by default */
+    .slides {
+      display:none;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: grey;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .prev{
+      left:-5px;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      position: relative;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4;left:-40px;}
+      to {opacity: 1;left:0px;}
+    }
+
+    @keyframes fade {
+      from {opacity: .4;left:-40px;}
+      to {opacity: 1;left:0px;}
+    }
+
+    @media only screen and (max-width: 1200px){
+      .event-btn{
+        font-size: 22px;
+      }
+      .event-btn-sub{
+        font-size: 16px;
+      }
+      .listitems div {
+        margin: 0;
+      }
+    }
+
+    @media only screen and (max-width:900px){
+      .event-btn{
+        font-size: 16px;
+      }
+      .event-btn-sub{
+        font-size: 12px;
+      }
+      .xactitude21{
+        width: 25%;
+     }
+    }
+
+    @media only screen and (max-width: 700px){
+      .banner {
+        display: block;
+      }
+      .banner{
+        padding:0 0 0 5%;
+      }
+      .banner-right {
+        justify-content: center;
+        margin:0;
+        padding: 1% 0;
+      }
+      .xactitude21{
+        padding-top: 2%;
+        width: 30%;
+     }
+      .home, .contct{
+        font-size: 14px;
+      }
+      .brochure{
+        width: 40%;
+      }
+      .event-btn {
+          font-size: 16px;
+          padding: 2% 5%;
+          margin: 2%;
+          width:50%;
+      }
+      .register{
+        width: 50%;
+        padding: 5% 8%;
+        font-size: 20px;
+      }
+      .general{
+        font-size: 20px;
+      }
+      .event-btn-sub{
+        font-size: 10px;
+      }
+      .contact{
+        padding:0 3%;
+      }
+      .details big{
+        font-size: 18px;
+      }
+      .details{
+        font-size: 14px;
+      }
+      .links{
+        padding-top: 8%;
+        justify-items: center;
+      }
+    }
+    @media only screen and (max-width: 450px){
+      .link-icon{
+        width:80%;
+      }
+      .xactitude{
+        font-size: 18px;
+      padding-top: 3%;
+       }
+       .home, .contct{
+         font-size: 12px;
+         margin-top: 6%;
+       }
+       .general{
+        font-size: 18px;
+      }
+       .transaction{
+         font-size: 16px;
+       }
+      .mail{
+        width:90%;
+      }
+      .brochure{
+        font-size: 10px;
+      }
+      .heading{
+        font-size: 24px;
+      }
+      .register{
+        font-size: 20px;
+      }
+      .events-title{
+        font-size: 40px;
+      }
+    }

@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "LEMONMILK-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("Fonts/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+    font-family: "LEMONMILK-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("Fonts/LEMONMILK-Regular.otf");
+}
+
+@font-face {
+    font-family: "LEMONMILK-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: url("Fonts/LEMONMILK-Light.otf");
+}
+:root {
+    --blaze-orange: rgba(255, 102, 0, 1);
+    --cinnabar: rgba(239, 54, 54, 1);
+    --dove-gray: rgba(112, 112, 112, 1);
+    --jacaranda: rgba(33, 0, 38, 1);
+    --soft-peach: rgba(242, 234, 239, 1);
+}
+* {
+    z-index: 2;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+a, a:hover, a:active, a:focus, a:visited{
+    text-decoration: none;
+}
+.title {
+    text-align: center;
+    position:relative;
+    background-color: black;
+   /* background-image: url("images/img4.gif"); */
+   background-repeat: no-repeat;
+   background-size: 100%;
+   overflow-y: hidden;
+    padding-bottom: 50px;
+    box-shadow:lightgray 4px 4px 8px;
+    box-shadow:grey 4px 4px 8px;
+}
+
+.banner {
+    position:relative;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.college-logo img{
+    height: 80px;
+}
+.sign-up {
+    color: var(--soft-peach);
+    margin: 20px;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "LEMONMILK-Regular";
+    font-size: 20px;
+}
+.sign-up:hover {
+    color:blueviolet;
+    font-weight: 1000;
+}
+.xactitude21 {
+    position:relative;
+    margin:8% 5% 0 5%;
+    width:70%;
+    height: auto;
+    animation-name: fade2;
+    animation-duration: 2s;
+}
+ .timer {
+    color: white;
+    font-family:"LEMONMILK-Regular";
+    font-size: 35px;
+    animation-name: up;
+    animation-duration: 2s;
+    margin-bottom: 3%;
+}
+.img1, .img2{
+    width:100%;
+    position: absolute;
+    z-index: 1;
+}
+.img2{
+    margin-top: -220px;
+}
+
+.register-box {
+    text-align: left;
+    position: relative;
+}
+.button1{
+    color: black;
+    text-align: center;
+    font-family: "LEMONMILK-Medium";
+    font-size: 28px;
+    font-weight: 200;
+    padding: 1em 10px;
+    margin:3% 5%;
+    background: white;
+    border-radius: 20px;
+    width:30%;
+    box-shadow:lightgray 2px 2px 4px;
+    box-shadow:grey 2px 2px 4px;
+    display: block;
+}
+.button1:hover{
+    background-color: var(--cinnabar);
+    border-style: none;
+    outline: none;
+    color: white;
+}
+.button1:focus{
+    background-color: var(--jacaranda);
+    border-style: none;
+    outline: none;
+    color: white;
+}
+.update-box {
+    position: relative;
+    background-color: white;
+    border-style: none;
+    text-align: center;
+    box-shadow: 8px 8px 12px gray;
+    margin: 200px 0;
+    padding: 8% 0 1% 0;
+    opacity:0.8;
+}
+.update-box:hover{
+   opacity:1;
+}
+.update {
+    color: black;
+    font-family: "LEMONMILK-Regular";
+    font-size: 20px;
+    width:100%;
+    line-height: 100px;
+}
+.event-box {
+    background-color:white;
+    text-align: center;
+    padding: 20px 50px;
+    margin: 5% 0;
+    position: relative;
+}
+
+.contact {
+    background-color: var(--jacaranda);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact div {
+    white-space: nowrap;
+    color: white;
+    font-family: "LEMONMILK-Regular";
+    font-size: 18px;
+}
+
+
+.event-container .update-container{
+    display: flex;
+    overflow-y: hidden;
+    transition: 2s ease;
+  }
+
+    /* Hide the images by default */
+    .slides .slide {
+      display:none;
+    }
+    .slides img {
+        width:85%;
+        box-shadow:5px 5px 40px;
+        border-radius: 3%;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        top: 50%;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+    .prev{
+      left:-1px;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      color: white;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      position: relative;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4;left:-40px;}
+      to {opacity: 1;left:0px;}
+    }
+
+    @keyframes fade {
+      from {opacity: .4;left:-40px;}
+      to {opacity: 1;left:0px;}
+    }
+
+    @keyframes fade2 {
+        from {left:-200px}
+        to {left:0}
+      }
+
+      @keyframes up {
+        from {
+        opacity: 0;
+        transform: translate(0, 150px);
+        }
+        to {
+        opacity: 1;
+        transform: translate(0, 0);
+        }
+    }
+
+    @media only screen and (max-width: 700px){
+        .banner {
+            display: block;
+        }
+        .college-logo img {
+            display: block;
+            margin: 0 auto;
+            width: 90%;
+            height: auto;
+        }
+        .sign-up {
+            display: block;
+            margin: 20px auto;
+            width:30%;
+            background-color: var(--cinnabar);
+            border-radius: 20px;
+            padding:5px;
+            color: white;
+        }
+        .sign-up:hover{
+            color: var(--jacaranda);
+        }
+        .update-box{
+            margin: 50px 0;
+            opacity: 1;
+        }
+        .register-box{
+            margin: 10% 0;
+        }
+        .button1{
+            margin: 0% 10%;
+        }
+        .xactitude21 , .timer {
+            margin:25px 8% ;
+            font-size:60px;
+        }
+        .timer{
+            font-size: 30px;
+        }
+        
+        .button1{
+            font-size: 18px;
+            margin:30px 5%;
+        }
+        .event-box{
+            margin-top: 5%;
+        }
+        .update{
+            font-size: 22px;
+        }
+        .prev, .next{
+            padding:8px;
+        }
+        .slides img{
+            width: 100%;
+        }
+        .img1, .img2{
+            margin-top: -10px;
+        }
+    }
+
+    @media only screen and (max-width: 450px){
+        .college-logo img {
+            width: 80%;
+        }
+        .sign-up {
+            width:40%;
+            border-radius: 10px;
+        }
+        .xactitude21 , .timer {
+            font-size:35px;
+        }
+        .timer{
+            font-size: 20px;
+        }
+        .button1{
+            border-radius: 15px;
+            font-size: 14px;
+            margin:5%;
+        }
+        .event-box{
+            margin: 2% 0;
+        }
+        .update{
+            font-size: 14px;
+        }
+        .dot{
+            width:5px;
+            height:5px;
+        }
+    }
+
